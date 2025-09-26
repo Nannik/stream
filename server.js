@@ -35,7 +35,6 @@ const config = {
       }
     ]
   },
-  logType: 1,
 };
 
 const nms = new NodeMediaServer(config);

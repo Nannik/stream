@@ -10,8 +10,9 @@
   <video id="video" controls autoplay style="width: 640px; height: 360px;"></video>
 
   <script>
+    const host = window.location.host;
     const video = document.getElementById('video');
-    const streamUrl = 'http://localhost:8000/hls/test.m3u8';
+    const streamUrl = `http://${host}:8000/hls/test.m3u8`;
 
     if (Hls.isSupported()) {
       const hls = new Hls();
